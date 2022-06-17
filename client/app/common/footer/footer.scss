@@ -1,9 +1,12 @@
 @import '../common';
 
-.hero {
+.footer {
   background-color: $darkBgColor;
-  height: 3rem;
-  padding: 3rem;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 2rem;
 
   * {
     color: $lightTextColor;
