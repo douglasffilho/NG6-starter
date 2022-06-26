@@ -1,10 +1,94 @@
-<navbar></navbar>
-<header>
-  <hero></hero>
-</header>
-<main>
-  <div>
-    <h1>Found in {{ $ctrl.name }}.html</h1>
+<header class="container">
+  <h1>Apoio ao Visitante</h1>
+
+  <div class="container destaque">
+    <section class="busca">
+      <h2>Busca</h2>
+
+      <form action="http://www.google.com.br/search" id="formbusca">
+        <input type="search" name="q" id="q">
+        <input type="image" src="assets/busca.png" alt="Pesquise aqui">
+      </form>
+    </section>
   </div>
-</main>
+</header>
+
+<div class="container paineis">
+  <section class="painel novidades">
+    <ol>
+      <li>
+        <a ui-sref="restaurantes">
+          <figure>
+            <img src="assets/restaurantes.png">
+            <figcaption>Restaurantes</figcaption>
+          </figure>
+        </a>
+      </li>
+
+      <li>
+        <a ui-sref="delegacias">
+          <figure>
+            <img src="assets/policial.png">
+            <figcaption>Delegacias</figcaption>
+          </figure>
+        </a>
+      </li>
+
+      <li>
+        <a ui-sref="turismo">
+          <figure>
+            <img src="assets/pontosturisticos.png">
+            <figcaption>Pontos Turísticos</figcaption>
+          </figure>
+        </a>
+      </li>
+
+      <li>
+        <a ui-sref="praias">
+          <figure>
+            <img src="assets/praias.png">
+            <figcaption>Praias</figcaption>
+          </figure>
+        </a>
+      </li>
+
+      <li>
+        <a ui-sref="restaurantes">
+          <figure>
+            <img src="assets/restaurantes.png">
+            <figcaption>Restaurantes</figcaption>
+          </figure>
+        </a>
+      </li>
+
+      <li>
+        <a ui-sref="hoteis">
+          <figure>
+            <img src="assets/hoteis.png">
+            <figcaption>Hoteis</figcaption>
+          </figure>
+        </a>
+      </li>
+
+      <li>
+        <a ui-sref="eventos">
+          <figure>
+            <img src="assets/eventos.png">
+            <figcaption>Eventos</figcaption>
+          </figure>
+        </a>
+      </li>
+
+      <li>
+        <a ui-sref="banheiros">
+          <figure>
+            <img src="assets/banheiros.png">
+            <figcaption>Banheiros</figcaption>
+          </figure>
+        </a>
+      </li>
+    </ol>
+  </section>
+</div>
+
 <footer></footer>

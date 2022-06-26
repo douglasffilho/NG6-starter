@@ -1,6 +1,8 @@
 import angular from 'angular';
 import uiRouter from 'angular-ui-router';
-import homeComponent from './home.component';
+import template from './home.html';
+import controller from './home.controller';
+import './home.scss';
 
 let homeModule = angular.module('home', [
   uiRouter
@@ -18,8 +20,13 @@ let homeModule = angular.module('home', [
     });
 })
 
-.component('home', homeComponent)
-  
+.component('home', {
+  restrict: 'E',
+  bindings: {},
+  template,
+  controller
+})
+
 .name;
 
 export default homeModule;

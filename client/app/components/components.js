@@ -1,14 +1,14 @@
-import angular from 'angular';
-import Home from './home/home';
-import About from './about/about';
-import blogModule from './blog/blog';
+import angular from "angular";
+import uiRouter from 'angular-ui-router';
+import Home from "./home/home";
+import Templates from "./templates/templates";
+import Pages from "./pages/pages";
 
-let componentModule = angular.module('app.components', [
+const modules = angular.module("app.components", [
+  uiRouter,
   Home,
-  About,
-  blogModule
-])
+  ...Templates,
+  ...Pages
+]).name;
 
-.name;
-
-export default componentModule;
+export default modules;

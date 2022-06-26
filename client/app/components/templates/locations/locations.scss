@@ -1,0 +1,104 @@
+@import "../../../app";
+
+locations {
+  margin-top: 15px;
+  height: 100%;
+  overflow: hidden;
+
+  .container {
+    display: flex;
+    height: 100%;
+
+    .locations-data {
+      width: 20rem;
+      background-color: $bgColor;
+      text-align: left;
+      padding: 20px;
+
+      .busca {
+        h2 {
+          font-size: 1.5rem;
+        }
+
+        form {
+          display: flex;
+          justify-content: space-between;
+        }
+      }
+
+      .menu-departamentos {
+        height: 100%;
+        margin-top: 10px;
+        font-size: 1rem;
+
+        h1 {
+          text-align: center;
+          text-transform: uppercase;
+          font-weight: bold;
+        }
+        nav {
+          height: 80%;
+          margin-top: 10px;
+
+          ul {
+            height: 80%;
+            overflow: scroll;
+
+            li {
+              margin: 5px;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 940px) {
+  locations {
+    .container {
+      width: 100%;
+
+      iframe {
+        width: 100%;
+      }
+
+      .locations-data {
+        width: 100%;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 530px) {
+  locations {
+    overflow: scroll;
+
+    .container {
+      height: auto;
+      width: 100%;
+      flex-flow: column;
+
+      iframe {
+        height: 500px;
+      }
+
+      .locations-data {
+        width: 100%;
+
+        .menu-departamentos {
+          height: 300px;
+
+          nav {
+            height: 280px;
+
+            ul {
+              height: 280px;
+              overflow: scroll;
+            }
+          }
+        }
+      }
+    }
+  }
+}

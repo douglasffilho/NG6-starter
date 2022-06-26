@@ -1,14 +1,14 @@
 import angular from 'angular';
+import angularMocks from 'angular-mocks';
 import uiRouter from 'angular-ui-router';
-import Common from './common/common';
 import Components from './components/components';
 import AppComponent from './app.component';
-import 'normalize.css';
+import config from '../mock/config';
 
 angular.module('app', [
     uiRouter,
-    Common,
-    Components
+    Components,
+    'ngMockE2E'
   ])
   .config(($locationProvider) => {
     "ngInject";
@@ -16,5 +16,5 @@ angular.module('app', [
     // #how-to-configure-your-server-to-work-with-html5mode
     $locationProvider.html5Mode(true).hashPrefix('!');
   })
-
+  .run(config)
   .component('app', AppComponent);
